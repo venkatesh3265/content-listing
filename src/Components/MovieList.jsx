@@ -22,7 +22,7 @@ const MovieList = () => {
   }, [contentlist.length, totalLength]);
 
   return (
-    <div className="grid grid-cols-3 gap-8 p-8">
+    <div className="grid grid-cols-3 gap-3 p-0 m-2">
       {data &&
         contentlist.map((item, index) => {
           let totalLength = contentlist.length;
