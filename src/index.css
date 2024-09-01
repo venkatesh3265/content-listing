@@ -1,0 +1,11 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+    font-family: "Titillium Web", system-ui;
+  color: white;
+  background: #171717;
+  font-weight: 200;
+  font-style: normal;
+}
