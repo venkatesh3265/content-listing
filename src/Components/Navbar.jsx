@@ -26,7 +26,7 @@ const Navbar = () => {
   };
 
   return (
-    <div className='bg-nav-bar h-[80px] fixed w-full z-30'>
+    <div className='bg-nav-bar h-[80px] top-0 fixed w-screen z-30'>
       <div className='flex items-center p-2'>
         <img
           className='w-[30px] h-[30px]'
@@ -34,7 +34,7 @@ const Navbar = () => {
           alt='Back'
           onClick={handleBackClick}
         />
-        <div className='p-2 m-2 flex-1'>{title}</div>
+        <div className='m-2 flex-1'>{title}</div>
         <div className='flex items-center'>
           {isSearchClicked && (
              <input

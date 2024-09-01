@@ -30,7 +30,7 @@ const contentSlice = createSlice({
           item.name.toLowerCase().includes(searchQuery)
         );
       } else {
-        
+        state.isSearchClicked = false
         state.contentlist = state.originalContentList;
       }
     }
