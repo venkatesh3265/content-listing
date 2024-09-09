@@ -1,11 +1,7 @@
 .App {
     text-align: center;
-   
-    background-color: black;
-    min-height: 100vh;
+    background-color: #171717;
     color: white;
-    height: 100%;
-    overflow-x: clip;
   }
   
   .App-logo {

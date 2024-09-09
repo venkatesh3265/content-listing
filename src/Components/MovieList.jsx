@@ -22,7 +22,7 @@ const MovieList = () => {
   }, [contentlist.length, totalLength]);
 
   return (
-    <div className="grid grid-cols-3 gap-3 p-0 m-2">
+    <div className="grid grid-cols-3 gap-3 p-0 m-2 relative top-[80px]">
       {data &&
         contentlist.map((item, index) => {
           let totalLength = contentlist.length;
@@ -30,18 +30,20 @@ const MovieList = () => {
             return (
               <div
                 ref={lastMovieElementRef}
-                className="flex flex-col items-center gap-[24px]"
+                className="flex flex-col items-center gap-[14px]"
               >
-                <span className="w-full ">{item.name}</span>
+             
                 <PosterImage item={item}/>
+                <span className="w-full text-center truncate">{item.name}</span>
               </div>
             );
           } else {
             return (
               <>
-                <div className="flex flex-col items-center  gap-[24px]">
-                  <span className="w-full ">{item.name}</span>
+                <div className="flex flex-col items-center  gap-[14px]">
+               
                   <PosterImage item={item}/>
+                  <span className="w-full text-center truncate">{item.name}</span>
                 </div>
               </>
             );

@@ -13,6 +13,8 @@ const Navbar = () => {
   };
 
   const handleBackClick = () => {
+    setSearchQuery('')
+    dispatch(toggleSearchClick());
     window.scrollTo({
         top: 0,
         behavior: 'smooth'

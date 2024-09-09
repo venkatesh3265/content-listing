@@ -22,6 +22,7 @@ const contentSlice = createSlice({
   reducers: {
     toggleSearchClick: (state) => {
       state.isSearchClicked = !state.isSearchClicked;
+      state.contentlist = state.originalContentList;
     },
     filterContentList: (state, action) => {
       const searchQuery = action.payload.toLowerCase();
@@ -30,7 +31,6 @@ const contentSlice = createSlice({
           item.name.toLowerCase().includes(searchQuery)
         );
       } else {
-        state.isSearchClicked = false
         state.contentlist = state.originalContentList;
       }
     }
